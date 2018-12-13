@@ -20,4 +20,9 @@ export class AuthService {
       })
     );
   }
+
+  register(model: any) {
+    // simple, no need to get token from backend
+    return this.http.post(this.baseUrl + 'register', model);
+  }
 }
