@@ -32,9 +32,7 @@ export class NavComponent implements OnInit {
 
   // this method is for *ngif in template to show status of user
   loggedIn() {
-    const token = localStorage.getItem('token');
-    // if something in this token, returns true
-    return !!token;
+    return this.authService.loggedIn();
   }
 
   loggedOut() {
