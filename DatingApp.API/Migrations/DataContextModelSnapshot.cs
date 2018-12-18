@@ -53,11 +53,11 @@ namespace DatingApp.API.Migrations
 
                     b.Property<string>("Gender");
 
-                    b.Property<string>("Interestes");
+                    b.Property<string>("Interests");
 
                     b.Property<string>("Introduction");
 
-                    b.Property<string>("KnowAs");
+                    b.Property<string>("KnownAs");
 
                     b.Property<DateTime>("LastActive");
 
